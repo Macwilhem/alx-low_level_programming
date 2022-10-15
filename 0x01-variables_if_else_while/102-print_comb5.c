@@ -1,18 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - prints all combination of single digits
+ * main - Entry point
+ * Description: prints all combination of two two-digits numbers
  * Return: always 0
  */
 int main(void)
 {
-	int n;
+	int i, j;
 
-	for (n =48; n < 58; n++)
+	for (i = 0; i < 99; i++)
 	{
-		putchar(n);
-		if (n != 57)
+		for (j = i + 1; j <= 99; j++)
 		{
+			putchar('0' + i / 10);
+			putchar('0' + i % 10);
+
+			putchar(' ');
+
+			putchar('0' + j / 10);
+			putchar('0' + j % 10);
+
+			if (i ==98 && j == 99)
+				break;
 			putchar(',');
 			putchar(' ');
 		}
