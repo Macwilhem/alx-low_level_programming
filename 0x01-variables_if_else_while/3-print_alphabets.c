@@ -10,20 +10,14 @@ int main(void)
 
 	char j;
 
-	i = 'a';
-	j = 'A';
-	while
-		(i <= 'z')
-		{
-			putchar(c);
-			c++;
-		}
-	while
-		(j <= 'Z')
-		{
-			putchar(j);
-			j++;
-		}
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		putchar(i);
+	}
+	for (j = 'A'; j <= 'Z'; j++)
+	{
+		putchar(j);
+	}
 	putchar('\n');
 	return (0);
 }
