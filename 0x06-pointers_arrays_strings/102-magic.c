@@ -1,8 +1,6 @@
 #include <stdio.h>
-/**
- * main - prints a code followed by a line
- * Return: 0 on success
- */
+
+
 int main(void)
 {
 	int n;
@@ -14,6 +12,7 @@ int main(void)
 	/*
 	 * writer your line of code here...
 	 * Remember:
+	 * main - magic
 	 *  - you are not allowed to use a
 	 *  - you are not allowed to modify p
 	 *  - only one statement
